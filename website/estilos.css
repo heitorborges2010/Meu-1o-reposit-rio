@@ -1,0 +1,293 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+body#corpo {
+    background: url("imagens/fundo.jpg");
+}
+
+header#cabecalho {
+    border-bottom: solid 2px gray;
+}
+
+article#conteudo {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+footer#rodape {
+    border-top: solid 2px gray;
+    text-align: center;
+}
+
+figure.outrasFotos {
+    background-color: lightgray;
+    text-align: center;
+    box-shadow: 0px 0px 20px #000000;
+    border-radius: 80px;
+}
+
+figure.foto1 {
+    background-color: lightblue;
+    box-shadow: 6px 6px 6px gray;
+    text-align: center;
+    border-radius: 10px;
+    border: solid 8px #000000;
+    width: 25%;
+    padding-top: 5px;
+    float: right;
+    transition: all 1.5s;
+}
+
+figure.foto1:hover {
+    transform: rotateZ(10deg);
+}
+
+figure.foto1 img {
+    width: 95%;
+    height: 150px;
+}
+
+figure.foto1 h4 {
+    margin-top: -4px;
+    margin-bottom: 0px;
+    background-color: yellow;
+}
+
+span.texto-tabela {
+    text-align: justify;
+    font-size: 16pt;
+    font-family: 'Sedgwick ave display', cursive;
+    text-indent: 50px;
+}
+
+/*Formatação do menu principal*/
+
+nav#menu h3 {
+    display: none;
+}
+
+nav#menu ol {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    right: 60px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    transition: background-color 2s, transform 1s;
+}
+
+nav#menu li:hover {
+    background-color: darkgray;
+    transform: rotateZ(-15deg);
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/*Formatação dos títulos do article*/
+
+article#conteudo h1 {
+    background-color: #808080;
+    text-shadow: 2px 2px 2px #ffff00;
+    font-size: 25pt;
+    text-align: center;
+    transition: all 1s;
+}
+
+article#conteudo h1:hover {
+    letter-spacing: 30px;
+}
+
+/*Formatação do logo da Darpa*/
+
+header#cabecalho img.logo {
+    position: absolute;
+    top: 5px;
+    left: 3px;
+}
+
+hgroup.titulos h1 {
+    text-transform: uppercase;
+    font-size: 30pt;
+    letter-spacing: -20px;
+    width: 45%;
+    border-radius: 20px;
+    transition: all 2s;
+}
+
+hgroup.titulos h1:hover {
+    letter-spacing: 6px;
+    background-color: blue;
+    margin-left: 9px;
+    color: white;
+    box-shadow: 6px 6px 6px gray;
+}
+
+/*Formatação dos Ícones*/
+
+header#cabecalho img.icone {
+    position: absolute;
+    top: 70px;
+    right: 80px;
+}
+
+/*Formatação da tabela de produtos*/
+table.topo-planilha {
+    font-size: 30px;
+}
+
+table.tabela-produtos td {
+    border: 3px solid black;
+    padding: 10px;
+}
+
+table.tabela-produtos th {
+    background-color: lightgray;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+table.tabela-produtos img {
+    width: 100px;
+}
+
+table.tabela-produtos td:hover {
+    background-color: black;
+    color: white;
+}
+
+iframe.video1 {
+    position: absolute;
+    top: 320px;
+    left: 720px;
+}
+
+iframe.video2 {
+    position: absolute;
+    bottom: -15px;
+    left: 720px;
+    ;
+}
+
+iframe.video3 {
+    position: absolute;
+    top: 320px;
+    right: 100px;
+}
+
+/*formatação de videos de serviços*/
+span.texto h3{
+    font-size: 20pt;
+    font-family: 'Sedgwick ave display', cursive;
+    text-align: center;
+    color: darkblue;
+}
+span.texto p{
+    font-size: 20px;
+    font-family: 'Sedgwick ave display', cursive;
+}
+div.div-principal {
+    width: 100%;
+    display: flex;
+    border: solid darkblue 5px;
+    gap: 15px;
+    background-color: rgb(140, 213, 238);
+}
+div.div-principal div {
+    flex:1
+}
+div.div-principal iframe {
+    width: 100%;
+    border-radius: 30px;
+} 
+div.divsec{
+    border-right: darkblue solid 5px;
+    border-left: darkblue solid 5px;
+    padding: 14px;
+}
+/*formatação da tabela de horários*/
+    h2.titulo-horarios{
+        text-align: center;
+        font-size: 30pt;
+        font-family: 'Sedgwick ave display', cursive;
+    }
+    table.tabela-horarios {
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+        background-color: lightblue;
+    }
+    h2.titulo-perguntas{
+        text-align: center;
+        font-size: 30pt;
+        font-family: 'Sedgwick ave display', cursive;
+    }
+    table.tabela-horarios caption{
+        font-size: 25pt;
+       background-color: lightblue;
+       border-bottom: solid 3px black    
+    }
+section.secao  {
+    background-color: lightgrey;
+}
+section.secao div{
+    text-align: center;
+    font-size: 25px;
+
+}
+table.tabela-horarios td {
+    border: 4px solid black;
+    padding: 10px;
+}
+iframe.loc{
+    width: 100%;
+    height: 900px;
+}  
+/*formatação das fotinhas da equipa*/
+ul.colaboradores-aura {
+    max-width: 100%;
+    margin: auto;
+    padding: 40px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}  
+ul.colaboradores-aura li {
+    width:350px;
+    height: 450px;
+    border: 5px solid lightblue;
+    font-family: 'Sedgwick ave display', cursive;
+    text-align: center;
+    background: var(--img) center/cover no-repeat;
+    transition: all 2s ease;
+    position: relative;
+}
+ul.colaboradores-aura li:hover{
+    transform: scale(1.1);
+    background: var(--img-hover) center/cover no-repeat;
+}
+ul.colaboradores-aura span{
+    opacity: 0;
+}
+ul.colaboradores-aura li:hover span{
+    transform: scale(1.2);
+    opacity: 1;
+    color: lightblue;
+    font-size: 20pt;
+}
